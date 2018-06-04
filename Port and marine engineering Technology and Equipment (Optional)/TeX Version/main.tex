@@ -1,0 +1,38 @@
+%main.tex
+\documentclass[a4paper]{article}
+%其余为默认值，需要的话再添加控制参数，详见《入门手册》
+
+%——————————————————————导言区——————————————————————
+
+\input{data/format}
+
+\begin{document}
+	\pagestyle{fancy}
+    \fancyhf{}	%全局设置，清空页眉页脚
+	\lhead{\includegraphics[scale=0.4]{fig/tongjilogo.jpg}}
+	\rhead{港口与海洋工程技术与装备}
+
+	
+%——————————————————————摘要——————————————————————
+%\include{data/Abstract} 否则会多一个空白页
+\input{data/Abstract}
+
+%——————————————————————目录——————————————————————	
+\newpage
+\tableofcontents
+\contentsmargin{0pt}\renewcommand\contentspage{\thecontentspage}
+\dottedcontents{section}[2.3em]{\bfseries\addvspace{10pt}}{2.3em}{5pt}
+\dottedcontents{subsection}[5.5em]{}{3.2em}{5pt}
+\pagestyle{fancy}
+\setcounter{page}{2}
+
+%—————————————————————章节部分—————————————————————
+\newpage
+\input{data/1.Introduction}
+\input{data/4.VisitingNote}
+
+%\input{data/Reference}
+%\input{data/Appendixes}
+
+
+\end{document}

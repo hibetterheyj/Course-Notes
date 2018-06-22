@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.5.24)  22 JUN 2018 00:07
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.5.24)  22 JUN 2018 22:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -24,6 +24,14 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \bibindent=\dimen102
 )
 (./data/format.tex
+(e:/SoftWare/texlive/2018/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count88
+\float@exts=\toks14
+\float@box=\box26
+\@float@everytoks=\toks15
+\@floatcapt=\box27
+)
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
@@ -39,12 +47,12 @@ s
 )
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
-\ttl@box=\box26
+\ttl@box=\box28
 \beforetitleunit=\skip52
 \aftertitleunit=\skip53
 \ttl@plus=\dimen103
 \ttl@minus=\dimen104
-\ttl@toksa=\toks14
+\ttl@toksa=\toks16
 \titlewidth=\dimen105
 \titlewidthlast=\dimen106
 \titlewidthfirst=\dimen107
@@ -59,18 +67,18 @@ Package: expl3 2018/03/05 L3 programming layer (loader)
 
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3-code.tex
 Package: expl3 2018/03/05 L3 programming layer (code)
-\c_max_int=\count88
-\l_tmpa_int=\count89
-\l_tmpb_int=\count90
-\g_tmpa_int=\count91
-\g_tmpb_int=\count92
-\g__intarray_font_int=\count93
-\g__prg_map_int=\count94
-\c_log_iow=\count95
-\l_iow_line_count_int=\count96
-\l__iow_line_target_int=\count97
-\l__iow_one_indent_int=\count98
-\l__iow_indent_int=\count99
+\c_max_int=\count89
+\l_tmpa_int=\count90
+\l_tmpb_int=\count91
+\g_tmpa_int=\count92
+\g_tmpb_int=\count93
+\g__intarray_font_int=\count94
+\g__prg_map_int=\count95
+\c_log_iow=\count96
+\l_iow_line_count_int=\count97
+\l__iow_line_target_int=\count98
+\l__iow_one_indent_int=\count99
+\l__iow_indent_int=\count100
 \c_zero_dim=\dimen109
 \c_max_dim=\dimen110
 \l_tmpa_dim=\dimen111
@@ -89,77 +97,77 @@ Package: expl3 2018/03/05 L3 programming layer (code)
 \l_tmpb_muskip=\muskip13
 \g_tmpa_muskip=\muskip14
 \g_tmpb_muskip=\muskip15
-\l_keys_choice_int=\count100
-\c__fp_leading_shift_int=\count101
-\c__fp_middle_shift_int=\count102
-\c__fp_trailing_shift_int=\count103
-\c__fp_big_leading_shift_int=\count104
-\c__fp_big_middle_shift_int=\count105
-\c__fp_big_trailing_shift_int=\count106
-\c__fp_Bigg_leading_shift_int=\count107
-\c__fp_Bigg_middle_shift_int=\count108
-\c__fp_Bigg_trailing_shift_int=\count109
-\l__sort_length_int=\count110
-\l__sort_min_int=\count111
-\l__sort_top_int=\count112
-\l__sort_max_int=\count113
-\l__sort_true_max_int=\count114
-\l__sort_block_int=\count115
-\l__sort_begin_int=\count116
-\l__sort_end_int=\count117
-\l__sort_A_int=\count118
-\l__sort_B_int=\count119
-\l__sort_C_int=\count120
-\l__tl_build_start_index_int=\count121
-\l__tl_build_index_int=\count122
-\l__tl_analysis_normal_int=\count123
-\l__tl_analysis_index_int=\count124
-\l__tl_analysis_nesting_int=\count125
-\l__tl_analysis_type_int=\count126
-\l__regex_internal_a_int=\count127
-\l__regex_internal_b_int=\count128
-\l__regex_internal_c_int=\count129
-\l__regex_balance_int=\count130
-\l__regex_group_level_int=\count131
-\l__regex_mode_int=\count132
-\c__regex_cs_in_class_mode_int=\count133
-\c__regex_cs_mode_int=\count134
-\l__regex_catcodes_int=\count135
-\l__regex_default_catcodes_int=\count136
-\c__regex_catcode_L_int=\count137
-\c__regex_catcode_O_int=\count138
-\c__regex_catcode_A_int=\count139
-\c__regex_all_catcodes_int=\count140
-\l__regex_show_lines_int=\count141
-\l__regex_min_state_int=\count142
-\l__regex_max_state_int=\count143
-\l__regex_left_state_int=\count144
-\l__regex_right_state_int=\count145
-\l__regex_capturing_group_int=\count146
-\l__regex_min_pos_int=\count147
-\l__regex_max_pos_int=\count148
-\l__regex_curr_pos_int=\count149
-\l__regex_start_pos_int=\count150
-\l__regex_success_pos_int=\count151
-\l__regex_curr_char_int=\count152
-\l__regex_curr_catcode_int=\count153
-\l__regex_last_char_int=\count154
-\l__regex_case_changed_char_int=\count155
-\l__regex_curr_state_int=\count156
-\l__regex_step_int=\count157
-\l__regex_min_active_int=\count158
-\l__regex_max_active_int=\count159
-\l__regex_replacement_csnames_int=\count160
-\l__regex_match_count_int=\count161
-\l__regex_min_submatch_int=\count162
-\l__regex_submatch_int=\count163
-\l__regex_zeroth_submatch_int=\count164
-\g__regex_trace_regex_int=\count165
-\c_empty_box=\box27
-\l_tmpa_box=\box28
-\l_tmpb_box=\box29
-\g_tmpa_box=\box30
-\g_tmpb_box=\box31
+\l_keys_choice_int=\count101
+\c__fp_leading_shift_int=\count102
+\c__fp_middle_shift_int=\count103
+\c__fp_trailing_shift_int=\count104
+\c__fp_big_leading_shift_int=\count105
+\c__fp_big_middle_shift_int=\count106
+\c__fp_big_trailing_shift_int=\count107
+\c__fp_Bigg_leading_shift_int=\count108
+\c__fp_Bigg_middle_shift_int=\count109
+\c__fp_Bigg_trailing_shift_int=\count110
+\l__sort_length_int=\count111
+\l__sort_min_int=\count112
+\l__sort_top_int=\count113
+\l__sort_max_int=\count114
+\l__sort_true_max_int=\count115
+\l__sort_block_int=\count116
+\l__sort_begin_int=\count117
+\l__sort_end_int=\count118
+\l__sort_A_int=\count119
+\l__sort_B_int=\count120
+\l__sort_C_int=\count121
+\l__tl_build_start_index_int=\count122
+\l__tl_build_index_int=\count123
+\l__tl_analysis_normal_int=\count124
+\l__tl_analysis_index_int=\count125
+\l__tl_analysis_nesting_int=\count126
+\l__tl_analysis_type_int=\count127
+\l__regex_internal_a_int=\count128
+\l__regex_internal_b_int=\count129
+\l__regex_internal_c_int=\count130
+\l__regex_balance_int=\count131
+\l__regex_group_level_int=\count132
+\l__regex_mode_int=\count133
+\c__regex_cs_in_class_mode_int=\count134
+\c__regex_cs_mode_int=\count135
+\l__regex_catcodes_int=\count136
+\l__regex_default_catcodes_int=\count137
+\c__regex_catcode_L_int=\count138
+\c__regex_catcode_O_int=\count139
+\c__regex_catcode_A_int=\count140
+\c__regex_all_catcodes_int=\count141
+\l__regex_show_lines_int=\count142
+\l__regex_min_state_int=\count143
+\l__regex_max_state_int=\count144
+\l__regex_left_state_int=\count145
+\l__regex_right_state_int=\count146
+\l__regex_capturing_group_int=\count147
+\l__regex_min_pos_int=\count148
+\l__regex_max_pos_int=\count149
+\l__regex_curr_pos_int=\count150
+\l__regex_start_pos_int=\count151
+\l__regex_success_pos_int=\count152
+\l__regex_curr_char_int=\count153
+\l__regex_curr_catcode_int=\count154
+\l__regex_last_char_int=\count155
+\l__regex_case_changed_char_int=\count156
+\l__regex_curr_state_int=\count157
+\l__regex_step_int=\count158
+\l__regex_min_active_int=\count159
+\l__regex_max_active_int=\count160
+\l__regex_replacement_csnames_int=\count161
+\l__regex_match_count_int=\count162
+\l__regex_min_submatch_int=\count163
+\l__regex_submatch_int=\count164
+\l__regex_zeroth_submatch_int=\count165
+\g__regex_trace_regex_int=\count166
+\c_empty_box=\box29
+\l_tmpa_box=\box30
+\l_tmpb_box=\box31
+\g_tmpa_box=\box32
+\g_tmpb_box=\box33
 \l__box_top_dim=\dimen115
 \l__box_bottom_dim=\dimen116
 \l__box_left_dim=\dimen117
@@ -168,8 +176,8 @@ Package: expl3 2018/03/05 L3 programming layer (code)
 \l__box_bottom_new_dim=\dimen120
 \l__box_left_new_dim=\dimen121
 \l__box_right_new_dim=\dimen122
-\l__box_internal_box=\box32
-\l__coffin_internal_box=\box33
+\l__box_internal_box=\box34
+\l__coffin_internal_box=\box35
 \l__coffin_internal_dim=\dimen123
 \l__coffin_offset_x_dim=\dimen124
 \l__coffin_offset_y_dim=\dimen125
@@ -177,14 +185,14 @@ Package: expl3 2018/03/05 L3 programming layer (code)
 \l__coffin_y_dim=\dimen127
 \l__coffin_x_prime_dim=\dimen128
 \l__coffin_y_prime_dim=\dimen129
-\c_empty_coffin=\box34
-\l__coffin_aligned_coffin=\box35
-\l__coffin_aligned_internal_coffin=\box36
-\l_tmpa_coffin=\box37
-\l_tmpb_coffin=\box38
-\l__coffin_display_coffin=\box39
-\l__coffin_display_coord_coffin=\box40
-\l__coffin_display_pole_coffin=\box41
+\c_empty_coffin=\box36
+\l__coffin_aligned_coffin=\box37
+\l__coffin_aligned_internal_coffin=\box38
+\l_tmpa_coffin=\box39
+\l_tmpb_coffin=\box40
+\l__coffin_display_coffin=\box41
+\l__coffin_display_coord_coffin=\box42
+\l__coffin_display_pole_coffin=\box43
 \l__coffin_display_offset_dim=\dimen130
 \l__coffin_display_x_dim=\dimen131
 \l__coffin_display_y_dim=\dimen132
@@ -198,14 +206,14 @@ Package: expl3 2018/03/05 L3 programming layer (code)
 )
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
 File: l3xdvidpfmx.def 2017/03/18 v L3 Experimental driver: xdvipdfmx
-\g__driver_image_int=\count166
+\g__driver_image_int=\count167
 ))
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks15
+\@emptytoks=\toks17
 \ex@=\dimen140
 ))
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
@@ -213,7 +221,7 @@ Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks16
+\KV@toks@=\toks18
 )
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
@@ -318,23 +326,23 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2018/02/21 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count167
-\g__xparse_grabber_int=\count168
-\l__xparse_m_args_int=\count169
-\l__xparse_mandatory_args_int=\count170
-\l__xparse_v_nesting_int=\count171
+\l__xparse_current_arg_int=\count168
+\g__xparse_grabber_int=\count169
+\l__xparse_m_args_int=\count170
+\l__xparse_mandatory_args_int=\count171
+\l__xparse_v_nesting_int=\count172
 )
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.s
 ty
 Package: xtemplate 2018/02/21 L3 Experimental prototype document functions
 \l__xtemplate_tmp_dim=\dimen143
-\l__xtemplate_tmp_int=\count172
+\l__xtemplate_tmp_int=\count173
 \l__xtemplate_tmp_muskip=\muskip16
 \l__xtemplate_tmp_skip=\skip60
 )
 Package: xfrac 2018/02/21 L3 Experimental split-level fractions
-\l__xfrac_slash_box=\box42
-\l__xfrac_tmp_box=\box43
+\l__xfrac_slash_box=\box44
+\l__xfrac_tmp_box=\box45
 \l__xfrac_denominator_bot_sep_dim=\dimen144
 \l__xfrac_numerator_bot_sep_dim=\dimen145
 \l__xfrac_numerator_top_sep_dim=\dimen146
@@ -354,8 +362,8 @@ Package: xfrac 2018/02/21 L3 Experimental split-level fractions
 .................................................
 ) (e:/SoftWare/texlive/2018/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
 Package: xeCJK 2018/04/07 v3.7.0 Typesetting CJK scripts with XeLaTeX
-\l__xeCJK_tmp_int=\count173
-\l__xeCJK_tmp_box=\box44
+\l__xeCJK_tmp_int=\count174
+\l__xeCJK_tmp_box=\box46
 \l__xeCJK_tmp_dim=\dimen149
 \l__xeCJK_tmp_skip=\skip61
 .................................................
@@ -363,9 +371,9 @@ Package: xeCJK 2018/04/07 v3.7.0 Typesetting CJK scripts with XeLaTeX
 . 
 . Defining command \xeCJKShipoutHook with sig. '' on line 150.
 .................................................
-\g__xeCJK_space_factor_int=\count174
-\l__xeCJK_begin_int=\count175
-\l__xeCJK_end_int=\count176
+\g__xeCJK_space_factor_int=\count175
+\l__xeCJK_begin_int=\count176
+\l__xeCJK_end_int=\count177
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -412,7 +420,7 @@ Package: xeCJK 2018/04/07 v3.7.0 Typesetting CJK scripts with XeLaTeX
 . Defining command \xeCJKResetCharClass with sig. '' on line 670.
 .................................................
 \l__xeCJK_last_skip=\skip62
-\g__xeCJK_node_int=\count177
+\g__xeCJK_node_int=\count178
 \c__xeCJK_CJK_node_dim=\dimen150
 \c__xeCJK_CJK-space_node_dim=\dimen151
 \c__xeCJK_default_node_dim=\dimen152
@@ -422,7 +430,7 @@ Package: xeCJK 2018/04/07 v3.7.0 Typesetting CJK scripts with XeLaTeX
 \l__xeCJK_ccglue_skip=\skip63
 \l__xeCJK_ecglue_skip=\skip64
 \l__xeCJK_punct_kern_skip=\skip65
-\l__xeCJK_last_penalty_int=\count178
+\l__xeCJK_last_penalty_int=\count179
 \l__xeCJK_last_bound_dim=\dimen156
 \l__xeCJK_last_kern_dim=\dimen157
 .................................................
@@ -430,7 +438,7 @@ Package: xeCJK 2018/04/07 v3.7.0 Typesetting CJK scripts with XeLaTeX
 . 
 . Defining command \xeCJKnobreak with sig. '' on line 1889.
 .................................................
-\l__xeCJK_widow_penalty_int=\count179
+\l__xeCJK_widow_penalty_int=\count180
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -498,7 +506,7 @@ Package: xeCJK 2018/04/07 v3.7.0 Typesetting CJK scripts with XeLaTeX
 . 
 . Defining command \setCJKfallbackfamilyfont with sig. 'mom' on line 3059.
 .................................................
-\g__xeCJK_family_int=\count180
+\g__xeCJK_family_int=\count181
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -560,9 +568,9 @@ Package: xeCJK 2018/04/07 v3.7.0 Typesetting CJK scripts with XeLaTeX
 . 
 . Defining command \setCJKmathfont with sig. 'om' on line 3870.
 .................................................
-\l__xeCJK_fam_int=\count181
-\g__xeCJK_fam_allocation_int=\count182
-\l__xeCJK_verb_case_int=\count183
+\l__xeCJK_fam_int=\count182
+\g__xeCJK_fam_allocation_int=\count183
+\l__xeCJK_verb_case_int=\count184
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -581,14 +589,14 @@ Package: fontspec 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTeX
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 Package: fontspec-xetex 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTe
 X
-\l__fontspec_script_int=\count184
-\l__fontspec_language_int=\count185
-\l__fontspec_strnum_int=\count186
-\l__fontspec_tmp_int=\count187
-\l__fontspec_em_int=\count188
-\l__fontspec_emdef_int=\count189
-\l__fontspec_strong_int=\count190
-\l__fontspec_strongdef_int=\count191
+\l__fontspec_script_int=\count185
+\l__fontspec_language_int=\count186
+\l__fontspec_strnum_int=\count187
+\l__fontspec_tmp_int=\count188
+\l__fontspec_em_int=\count189
+\l__fontspec_emdef_int=\count190
+\l__fontspec_strong_int=\count191
+\l__fontspec_strongdef_int=\count192
 \l__fontspec_tmpa_dim=\dimen177
 \l__fontspec_tmpb_dim=\dimen178
 \l__fontspec_tmpc_dim=\dimen179
@@ -865,7 +873,7 @@ LaTeX Info: Redefining \- on input line 4015.
 (e:/SoftWare/texlive/2018/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
 File: xeCJK.cfg 2018/04/07 v3.7.0 Configuration file for xeCJK package
 ))
-\g__fontspec_family_SimSun_int=\count192
+\g__fontspec_family_SimSun_int=\count193
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -915,41 +923,41 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count193
+\inf@bad=\count194
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count194
-\leftroot@=\count195
+\uproot@=\count195
+\leftroot@=\count196
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count196
-\DOTSCASE@=\count197
+\classnum@=\count197
+\DOTSCASE@=\count198
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box45
-\strutbox@=\box46
+\Mathstrutbox@=\box47
+\strutbox@=\box48
 \big@size=\dimen181
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count198
-\c@MaxMatrixCols=\count199
+\macc@depth=\count199
+\c@MaxMatrixCols=\count266
 \dotsspace@=\muskip19
-\c@parentequation=\count266
-\dspbrk@lvl=\count267
-\tag@help=\toks17
-\row@=\count268
-\column@=\count269
-\maxfields@=\count270
-\andhelp@=\toks18
+\c@parentequation=\count267
+\dspbrk@lvl=\count268
+\tag@help=\toks19
+\row@=\count269
+\column@=\count270
+\maxfields@=\count271
+\andhelp@=\toks20
 \eqnshift@=\dimen182
 \alignsep@=\dimen183
 \tagshift@=\dimen184
 \tagwidth@=\dimen185
 \totwidth@=\dimen186
 \lineht@=\dimen187
-\@envbody=\toks19
+\@envbody=\toks21
 \multlinegap=\skip68
 \multlinetaggap=\skip69
-\mathdisplay@stack=\toks20
+\mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
@@ -1038,7 +1046,7 @@ Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 207.
 )
-\g__fontspec_family_TimesNewRoman_int=\count271
+\g__fontspec_family_TimesNewRoman_int=\count272
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1064,7 +1072,7 @@ LaTeX Info: Redefining \bm on input line 207.
 . - 'bold italic small caps'  (bx/itsc) with NFSS spec.: <->"Times New
 . Roman/BI/OT:script=latn;language=DFLT;+smcp;mapping=tex-text;"
 .................................................
-LaTeX Info: Redefining \rmfamily on input line 49.
+LaTeX Info: Redefining \rmfamily on input line 51.
 
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2018/03/24 v5.7 Page Geometry
@@ -1079,9 +1087,9 @@ Package ifvtex Info: VTeX not detected.
 (e:/SoftWare/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count272
-\Gm@cntv=\count273
-\c@Gm@tempcnt=\count274
+\Gm@cnth=\count273
+\Gm@cntv=\count274
+\c@Gm@tempcnt=\count275
 \Gm@bindingoffset=\dimen188
 \Gm@wd@mp=\dimen189
 \Gm@odd@mp=\dimen190
@@ -1090,7 +1098,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutheight=\dimen193
 \Gm@layouthoffset=\dimen194
 \Gm@layoutvoffset=\dimen195
-\Gm@dimlist=\toks21
+\Gm@dimlist=\toks23
 )
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
@@ -1107,12 +1115,12 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \cmidrulesep=\dimen259
 \cmidrulekern=\dimen260
 \defaultaddspace=\dimen261
-\@cmidla=\count275
-\@cmidlb=\count276
+\@cmidla=\count276
+\@cmidlb=\count277
 \@aboverulesep=\dimen262
 \@belowrulesep=\dimen263
-\@thisruleclass=\count277
-\@lastruleclass=\count278
+\@thisruleclass=\count278
+\@lastruleclass=\count279
 \@thisrulewidth=\dimen264
 )
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/tools/longtable.sty
@@ -1121,27 +1129,27 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTright=\skip71
 \LTpre=\skip72
 \LTpost=\skip73
-\LTchunksize=\count279
+\LTchunksize=\count280
 \LTcapwidth=\dimen265
-\LT@head=\box47
-\LT@firsthead=\box48
-\LT@foot=\box49
-\LT@lastfoot=\box50
-\LT@cols=\count280
-\LT@rows=\count281
-\c@LT@tables=\count282
-\c@LT@chunks=\count283
-\LT@p@ftn=\toks22
+\LT@head=\box49
+\LT@firsthead=\box50
+\LT@foot=\box51
+\LT@lastfoot=\box52
+\LT@cols=\count281
+\LT@rows=\count282
+\c@LT@tables=\count283
+\c@LT@chunks=\count284
+\LT@p@ftn=\toks24
 )
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/tools/array.sty
 Package: array 2018/04/07 v2.4g Tabular extension package (FMi)
 \col@sep=\dimen266
-\ar@mcellbox=\box51
+\ar@mcellbox=\box53
 \extrarowheight=\dimen267
-\NC@list=\toks23
+\NC@list=\toks25
 \extratabsurround=\skip74
 \backup@length=\skip75
-\ar@cellbox=\box52
+\ar@cellbox=\box54
 )
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/cases/cases.sty
 Package: cases 2002/05/02 ver 2.5 
@@ -1160,7 +1168,8 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@parindent=\dimen273
 \caption@hangindent=\dimen274
 )
-\c@ContinuedFloat=\count284
+\c@ContinuedFloat=\count285
+Package caption Info: float package is loaded.
 Package caption Info: longtable package is loaded.
 
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/caption/ltcaption.sty
@@ -1174,10 +1183,10 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigbottomskip=\skip78
 \subfigcapmargin=\dimen276
 \subfiglabelskip=\skip79
-\c@subfigure=\count285
-\c@lofdepth=\count286
-\c@subtable=\count287
-\c@lotdepth=\count288
+\c@subfigure=\count286
+\c@lofdepth=\count287
+\c@subtable=\count288
+\c@lotdepth=\count289
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -1185,14 +1194,6 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/subfigure/subfigure.cfg)
 \subfig@top=\skip80
 \subfig@bottom=\skip81
-)
-(e:/SoftWare/texlive/2018/texmf-dist/tex/latex/float/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count289
-\float@exts=\toks24
-\float@box=\box53
-\@float@everytoks=\toks25
-\@floatcapt=\box54
 )
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/titlesec/block.tss
 File: block.tss 2016/03/15
@@ -1277,14 +1278,7 @@ Package: xeCJK-listings 2018/04/07 v3.7.0 xeCJK patch file for listings
 \l__xeCJK_listings_max_char_int=\count302
 \l__xeCJK_listings_flag_int=\count303
 )
-(./main.aux
-
-LaTeX Warning: Label `xtxjz' multiply defined.
-
-
-LaTeX Warning: Label `wlknyy' multiply defined.
-
-)
+(./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 9.
@@ -1299,7 +1293,6 @@ LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 9.
 LaTeX Font Info:    Try loading font information for OMS+txsy on input line 9.
-
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
@@ -1427,7 +1420,6 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -1463,94 +1455,158 @@ Package caption Info: End \AtBeginDocument code.
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
+
+Overfull \vbox (41.29659pt too high) has occurred while \output is active []
+
 File: fig/tongjilogo.jpg Graphic file (type bmp)
 <fig/tongjilogo.jpg>
- [2
+
+[1
 
 ] (./data/1.Introduction.tex
 File: fig/tongjilogo.jpg Graphic file (type bmp)
 <fig/tongjilogo.jpg>
- [3]
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 53.
+ [1]
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 57.
 
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 53.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 57.
 
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 53.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 57.
 
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 53.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 57.
 
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 53.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 57.
 
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
 File: fig/tongjilogo.jpg Graphic file (type bmp)
 <fig/tongjilogo.jpg>
- [4])
+ [2])
 (./data/2.Mechanical.tex
 File: fig/tongjilogo.jpg Graphic file (type bmp)
 <fig/tongjilogo.jpg>
- [5]
+ [3]
 File: fig/hxt.png Graphic file (type bmp)
 <fig/hxt.png>
 File: fig/xtxjz.png Graphic file (type bmp)
 <fig/xtxjz.png>
 File: fig/tongjilogo.jpg Graphic file (type bmp)
 <fig/tongjilogo.jpg>
+ [4]
+File: fig/qxlml.png Graphic file (type bmp)
+<fig/qxlml.png>
+File: fig/dplb.png Graphic file (type bmp)
+<fig/dplb.png>
+File: fig/tongjilogo.jpg Graphic file (type bmp)
+<fig/tongjilogo.jpg>
+ [5]
+File: fig/ytjg.png Graphic file (type bmp)
+<fig/ytjg.png>
+File: fig/tongjilogo.jpg Graphic file (type bmp)
+<fig/tongjilogo.jpg>
  [6]
+Underfull \hbox (badness 10000) in paragraph at lines 87--89
+
+ []
+
+File: fig/qtjg.png Graphic file (type bmp)
+<fig/qtjg.png>
+File: fig/overview.png Graphic file (type bmp)
+<fig/overview.png>
 File: fig/xcsst.png Graphic file (type bmp)
 <fig/xcsst.png>
+File: fig/tongjilogo.jpg Graphic file (type bmp)
+<fig/tongjilogo.jpg>
+[7]
 File: fig/jdgonglu.jpg Graphic file (type bmp)
 <fig/jdgonglu.jpg>
 ) (./data/3.Electrical.tex
 File: fig/tongjilogo.jpg Graphic file (type bmp)
 <fig/tongjilogo.jpg>
- [7]
+ [8]
 File: fig/rjjg.png Graphic file (type bmp)
 <fig/rjjg.png>
-File: fig/sjyj.png Graphic file (type bmp)
-<fig/sjyj.png>
-)
-(./data/4.Feasibility_analysis.tex
-File: fig/tongjilogo.jpg Graphic file (type bmp)
-<fig/tongjilogo.jpg>
- [8]
 File: fig/tongjilogo.jpg Graphic file (type bmp)
 <fig/tongjilogo.jpg>
  [9]
+File: fig/shijueyj.png Graphic file (type bmp)
+<fig/shijueyj.png>
+File: fig/LiDAR.png Graphic file (type bmp)
+<fig/LiDAR.png>
+File: fig/tongjilogo.jpg Graphic file (type bmp)
+<fig/tongjilogo.jpg>
+ [10]
+File: fig/LiDAR_IO.png Graphic file (type bmp)
+<fig/LiDAR_IO.png>
+File: fig/LiDAR_test.png Graphic file (type bmp)
+<fig/LiDAR_test.png>
+File: fig/LiDAR_pipeline.png Graphic file (type bmp)
+<fig/LiDAR_pipeline.png>
+File: fig/tongjilogo.jpg Graphic file (type bmp)
+<fig/tongjilogo.jpg>
+ [11]
+File: fig/zed.jpg Graphic file (type bmp)
+<fig/zed.jpg>
+File: fig/sjyj.png Graphic file (type bmp)
+<fig/sjyj.png>
+File: fig/tongjilogo.jpg Graphic file (type bmp)
+<fig/tongjilogo.jpg>
+ [12]
+File: fig/tly.png Graphic file (type bmp)
+<fig/tly.png>
+File: fig/tly_pipeline.png Graphic file (type bmp)
+<fig/tly_pipeline.png>
+File: fig/gxcgq.png Graphic file (type bmp)
+<fig/gxcgq.png>
+File: fig/tongjilogo.jpg Graphic file (type bmp)
+<fig/tongjilogo.jpg>
+ [13]
+File: fig/3510.png Graphic file (type bmp)
+<fig/3510.png>
+File: fig/tongjilogo.jpg Graphic file (type bmp)
+<fig/tongjilogo.jpg>
+ [14]
+File: fig/tx_2.png Graphic file (type bmp)
+<fig/tx_2.png>
+File: fig/tongjilogo.jpg Graphic file (type bmp)
+<fig/tongjilogo.jpg>
+ [15])
+(./data/4.Feasibility_analysis.tex
+File: fig/tongjilogo.jpg Graphic file (type bmp)
+<fig/tongjilogo.jpg>
+ [16]
 File: fig/wlknyy.png Graphic file (type bmp)
 <fig/wlknyy.png>
-) (./data/5.Conclusion.tex
 File: fig/tongjilogo.jpg Graphic file (type bmp)
 <fig/tongjilogo.jpg>
- [10])
+ [17]) (./data/5.Conclusion.tex
+File: fig/tongjilogo.jpg Graphic file (type bmp)
+<fig/tongjilogo.jpg>
+ [18])
 File: fig/tongjilogo.jpg Graphic file (type bmp)
 <fig/tongjilogo.jpg>
 
-[11] (./main.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+[19] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 18753 strings out of 492970
- 393031 string characters out of 6133518
- 502479 words of memory out of 5000000
- 22506 multiletter control sequences out of 15000+600000
+ 18965 strings out of 492970
+ 402262 string characters out of 6133518
+ 502583 words of memory out of 5000000
+ 22702 multiletter control sequences out of 15000+600000
  543512 words of font info for 90 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 44i,16n,81p,10439b,414s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,16n,81p,10439b,437s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (10 pages).
+Output written on main.pdf (20 pages).

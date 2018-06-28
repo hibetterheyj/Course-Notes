@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.5.24)  22 JUN 2018 22:19
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.5.24)  29 JUN 2018 03:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1278,7 +1278,11 @@ Package: xeCJK-listings 2018/04/07 v3.7.0 xeCJK patch file for listings
 \l__xeCJK_listings_max_char_int=\count302
 \l__xeCJK_listings_flag_int=\count303
 )
-(./main.aux)
+(./main.aux
+
+LaTeX Warning: Label `rjjg' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 9.
@@ -1293,6 +1297,7 @@ LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 9.
 LaTeX Font Info:    Try loading font information for OMS+txsy on input line 9.
+
 (e:/SoftWare/texlive/2018/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
@@ -1456,7 +1461,7 @@ Package caption Info: End \AtBeginDocument code.
 \openout3 = `main.toc'.
 
 
-Overfull \vbox (41.29659pt too high) has occurred while \output is active []
+Overfull \vbox (80.09651pt too high) has occurred while \output is active []
 
 File: fig/tongjilogo.jpg Graphic file (type bmp)
 <fig/tongjilogo.jpg>
@@ -1539,11 +1544,11 @@ File: fig/tongjilogo.jpg Graphic file (type bmp)
  [8]
 File: fig/rjjg.png Graphic file (type bmp)
 <fig/rjjg.png>
+File: fig/shijueyj.png Graphic file (type bmp)
+<fig/shijueyj.png>
 File: fig/tongjilogo.jpg Graphic file (type bmp)
 <fig/tongjilogo.jpg>
  [9]
-File: fig/shijueyj.png Graphic file (type bmp)
-<fig/shijueyj.png>
 File: fig/LiDAR.png Graphic file (type bmp)
 <fig/LiDAR.png>
 File: fig/tongjilogo.jpg Graphic file (type bmp)
@@ -1583,30 +1588,53 @@ File: fig/tx_2.png Graphic file (type bmp)
 <fig/tx_2.png>
 File: fig/tongjilogo.jpg Graphic file (type bmp)
 <fig/tongjilogo.jpg>
- [15])
-(./data/4.Feasibility_analysis.tex
+ [15]
+File: fig/djikf.png Graphic file (type bmp)
+<fig/djikf.png>
 File: fig/tongjilogo.jpg Graphic file (type bmp)
 <fig/tongjilogo.jpg>
  [16]
+File: fig/tongjilogo.jpg Graphic file (type bmp)
+<fig/tongjilogo.jpg>
+
+[17]
+File: fig/rjjg.png Graphic file (type bmp)
+<fig/rjjg.png>
+File: fig/zxtp.png Graphic file (type bmp)
+<fig/zxtp.png>
+) (./data/4.Feasibility_analysis.tex
+File: fig/tongjilogo.jpg Graphic file (type bmp)
+<fig/tongjilogo.jpg>
+ [18]
+File: fig/tongjilogo.jpg Graphic file (type bmp)
+<fig/tongjilogo.jpg>
+ [19]
 File: fig/wlknyy.png Graphic file (type bmp)
 <fig/wlknyy.png>
 File: fig/tongjilogo.jpg Graphic file (type bmp)
 <fig/tongjilogo.jpg>
- [17]) (./data/5.Conclusion.tex
+ [20])
+(./data/5.Conclusion.tex
 File: fig/tongjilogo.jpg Graphic file (type bmp)
 <fig/tongjilogo.jpg>
- [18])
+ [21]) (./data/Reference.tex
 File: fig/tongjilogo.jpg Graphic file (type bmp)
 <fig/tongjilogo.jpg>
+ [22])
+File: fig/tongjilogo.jpg Graphic file (type bmp)
+<fig/tongjilogo.jpg>
+ [23] (./main.aux)
 
-[19] (./main.aux) ) 
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 18965 strings out of 492970
- 402262 string characters out of 6133518
- 502583 words of memory out of 5000000
- 22702 multiletter control sequences out of 15000+600000
+ 19030 strings out of 492970
+ 405529 string characters out of 6133518
+ 502669 words of memory out of 5000000
+ 22762 multiletter control sequences out of 15000+600000
  543512 words of font info for 90 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  44i,16n,81p,10439b,437s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (20 pages).
+Output written on main.pdf (24 pages).

@@ -27,18 +27,20 @@
 \contentsline {subsection}{\numberline {3.1}总体设计}{9}
 \contentsline {subsubsection}{\numberline {3.1.1}架构分析}{9}
 \contentsline {subsubsection}{\numberline {3.1.2}功能模块分析}{9}
-\contentsline {subsection}{\numberline {3.2}电子电气选型}{10}
-\contentsline {subsubsection}{\numberline {3.2.1}传感器}{10}
+\contentsline {subsection}{\numberline {3.2}电子电气选型}{9}
+\contentsline {subsubsection}{\numberline {3.2.1}传感器}{9}
 \contentsline {subsubsection}{\numberline {3.2.2}执行电机}{14}
 \contentsline {subsubsection}{\numberline {3.2.3}中央处理器}{15}
-\contentsline {subsubsection}{\numberline {3.2.4}传感器选择终选}{16}
-\contentsline {subsection}{\numberline {3.3}总线框架设计}{16}
-\contentsline {section}{\numberline {4}可行性分析}{17}
-\contentsline {subsection}{\numberline {4.1}重难点分析}{17}
-\contentsline {subsubsection}{\numberline {4.1.1}实现重点}{17}
-\contentsline {subsubsection}{\numberline {4.1.2}待突破难点}{17}
-\contentsline {subsection}{\numberline {4.2}经济社会效益分析}{17}
-\contentsline {section}{\numberline {5}总结}{19}
-\contentsline {subsection}{\numberline {5.1}设计报告感想}{19}
-\contentsline {subsection}{\numberline {5.2}课程总结反馈}{19}
+\contentsline {subsubsection}{\numberline {3.2.4}传感器选择终选}{17}
+\contentsline {subsection}{\numberline {3.3}视觉算法与软件架构}{17}
+\contentsline {subsubsection}{\numberline {3.3.1}视觉算法浅谈}{17}
+\contentsline {subsubsection}{\numberline {3.3.2}软件功能架构}{18}
+\contentsline {subsection}{\numberline {3.4}总线框架设计}{18}
+\contentsline {section}{\numberline {4}可行性分析}{20}
+\contentsline {subsection}{\numberline {4.1}重难点分析}{20}
+\contentsline {subsubsection}{\numberline {4.1.1}实现重点}{20}
+\contentsline {subsubsection}{\numberline {4.1.2}待突破难点}{20}
+\contentsline {subsection}{\numberline {4.2}经济社会效益分析}{20}
+\contentsline {section}{\numberline {5}总结感想}{22}
+\contentsline {section}{参考文献}{23}
 \contentsfinish 

@@ -134,7 +134,7 @@
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width = 0.5\textwidth]{fig/zed.jpg}
+	\includegraphics[width = 0.6\textwidth]{fig/zed.jpg}
 	\caption{Stereolabs ZED双目相机外观}
 	\label{zed}
 \end{figure}
@@ -143,7 +143,7 @@
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width = 0.6\textwidth]{fig/sjyj.png}
+	\includegraphics[width = 0.75\textwidth]{fig/sjyj.png}
 	\caption{图像传感器视场示意图}
 	\label{sjyj}
 \end{figure}
@@ -277,12 +277,13 @@
 		\midrule
 		
 		\textbf{中央处理器} & 1到2个布置于车身后部或车身内 & 整车采集数据的计算与指令决策的输出 & 供电电压必须小于24V，且越小越好；利于散热；有良好封装 \\
-		
+		\\
+		\textbf{主控单元} & 1个布置于车身内 & 接收来自上位机信息，并输出电机控制信号 & 供电电压必须小于24V，且越小越好；利于安装 \\
 		\bottomrule
 	\end{tabular}
 \end{table}
 
-最终选型是来自 Nvidia 的计算处理器板\emph{NVIDIA Jetson TX2}，该处理器集成了 ARM 架构中央处理单元(CPU)。=相较于前代产品，Jetson TX2所提供的性能为早前版本的两倍，即能够以两倍以上的功效运行，且功率低于7.5瓦。这使得Jetson TX2能够在终端应用上运行更庞大、更深度的神经网络，让设备更加智能，具有更高的精度和更快的响应时间，以执行如图像分类、导航和语音识别等任务。该开发模块适合机器人、无人机、智能摄像机和便携医疗设备等智能终端设备。
+最终选型计算处理平台是来自 Nvidia 的计算处理器板\emph{NVIDIA Jetson TX2}，该处理器集成了 ARM 架构中央处理单元(CPU)。=相较于前代产品，Jetson TX2所提供的性能为早前版本的两倍，即能够以两倍以上的功效运行，且功率低于7.5瓦。这使得Jetson TX2能够在终端应用上运行更庞大、更深度的神经网络，让设备更加智能，具有更高的精度和更快的响应时间，以执行如图像分类、导航和语音识别等任务。该开发模块适合机器人、无人机、智能摄像机和便携医疗设备等智能终端设备。
 
 根据\emph{jetson tx2 module datasheet v1.1}产品手册可以了解到，该板载计算机具有丰富的接口，包括USB，PCI Express，Serial Peripheral Interface，IIC, UART, CAN, JTAG等已知所有主流微机总线，较为方便进行智能机器人在感知、处理、决策等各方面的开发。
 
@@ -292,6 +293,20 @@
 	\caption{NVIDIA Jetson TX2实物与框图}
 	\label{tx2}
 \end{figure}
+
+中心主控采用RoboMaster开发板，它是专门为小型机器人设计的开源主控，可以满足整个机器人的控制需求。此外，开发板引出部分接口供使用者使用，在此基础上实现其他自定义功能。
+
+该开发板以STM32F427IIH6为主控，并引出2路CAN口、4路24V电源输出，3路12V电源输出、22路PWM输出、三路串口输出、板载IMU模块、板载蜂鸣器、板载按键和板载双色LED指示灯。支持IIC, GPIO，CAN等总线通信。
+
+外观如下图所示：
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 0.6\textwidth]{fig/djikf.png}
+	\caption{RoboMaster开发板}
+	\label{djikf}
+\end{figure}
+
 
 \subsubsection{传感器选择终选}
 
@@ -304,7 +319,8 @@
 		\tabincell{c}{\textbf{功能}} &\tabincell{c}{\textbf{电子元件}} &\tabincell{c}{\textbf{通讯设备或协议}} &\tabincell{c}{\textbf{产品型号}}\\ 
 		\midrule
 		
-		\textbf{中心主控} & 开发计算平台 & CAN, UART, IIC, USB, PCIe等 & NVIDIA Jetson TX2\\
+		\textbf{处理计算} & 开发处理计算平台 & CAN, UART, IIC, USB, PCIe等 & NVIDIA Jetson TX2\\
+		\textbf{中心主控} & 开发板 & CAN, UART, IIC等 & DJI RoboMaster开发板\\
 		\textbf{底盘移动} & 直流无刷电机电调 & CAN或UART等 & DJI M3508+C620 \\
 		\textbf{云台旋转} & 直流无刷电机电调 & CAN或UART等 & DJI EC60 \\
 		\textbf{三维建图} & 双目摄像头 & USB & ZED \\
@@ -316,6 +332,47 @@
 	\end{tabular}
 \end{table}
 
+\subsection{视觉算法与软件架构}
+
+\subsubsection{视觉算法浅谈}
+
+整个视觉SLAM流程包括以下步骤。
+
+\begin{enumerate}
+
+\item 传感器信息读取。在视觉SLAM中主要为相机图像信息的读取和预处理。如果是在机器人中，还可能有码盘、惯性传感等信息的读取和同步。
+
+\item 视觉里程计（ Visual Odometry，VO）。视觉里程计的任务是估算相邻图像间相机的运动，以及局部地图的样子。VO又称为前端（ Front End）。
+
+\item 后端优化（ Optimization）。后端接受不同时刻视觉里程计测量的相机位姿，以及回环检测的信息，对它们进行优化，得到全局一致的轨迹和地图。由于接在VO之后，又称为后端（ Back End）
+
+\item 回环检测（ Loop Closing）。回环检测判机器人是否到达过先前的位置。如果检测到回环，它会把信息提供给后端进行处理。
+
+\item 建图（ Mapping）。它根据估计的轨迹，建立与任务要求对应的地图。
+
+\end{enumerate}
+
+经典的视觉SLAM框架是过去十几年的研究果。这个框架本身及其所包含的算法已经基本定型，并且已经在许多视觉程序库和机器人程序库中提供。依靠这些算法我们能够构建一个视觉SLAM系统，使之正常的工作环境里实时定位与建图。因此我们说，如果把工作环境限定在静态、刚体，光照变化不明显、没有人为干扰的场景那么，这个SLAM系统是相当成熟。
+
+下面中间介绍回环检测，就多传感器信息融合方面，解决了在建图过程中随时间产生的漂移现象。
+
+\textbf{回环检测}，又称闭环检测（ Loop Closure Detection），主要解决位置估计随时间漂移的问题。怎么解决呢？假设实际情况下器人经过一段时间的运动后回到了原点，但是由于漂移，它的位置估计值却没有回到原点。
+
+回环检测与“定位”和“建图”二者都有密切的关系。事实上，我们认为，地图存在的主要意义是让机器人知晓自己到过的方。为了实现回环检测，需要让机器人具有识别到过的场景的能力。它的实现手段有很多。例如像前面说的那样，可以在机器人下方设置一个标志物（如一张二维码图片）。作为回到原点的标志。但是，该标志物实质上是一种环境中的传感器，对应用环境做了限制（万一不能贴二维码怎么办？）。我们更希望机器人能使用携带的传感器就是图像本身，来完成这一任务。例如，可以判断图像间的相似性来完成回环检测。这一点和人是相似的。当我们看到两张相似的图片时容易辨认它们来自同一个地方。如果回环检测成功，可以显著地减小累积误差。所以，视觉回环检测实质上是一种计算图像数据相似性的算法。由于图像的信息非常丰富，使得正确检测回环的难度降低了不少。
+
+在检测到回环之后，我们会把“A与B是同一个点”这样的信息告诉后端优化算法。然后，后端根据这些新的信息，把轨迹和地图调整到符合回环检测结果的样子。这样，如果我们有充分而且正确的回环检测，就可以消除累积误差，得到全局一致的轨迹和地图。
+
+\subsubsection{软件功能架构}
+
+根据上述功能模块描述以及传感器选型可以得出，以NVIDIA Jetson TX2上的ROS为基础，建立多节点架构，实时处理信息后输入信息至中心主板进行实时动态控制，具体软件架构如下图所示，
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 0.8\textwidth]{fig/rjjg.png}
+	\caption{AtomIC总体架构}
+	\label{rjjg}
+\end{figure}
+
 \subsection{总线框架设计}
 
 AtomIC总线布置方面，最主要的就是CAN总线技术，其次是IIC、SBUS串口和USART。
@@ -324,4 +381,13 @@ AtomIC总线布置方面，最主要的就是CAN总线技术，其次是IIC、SB
 
 出于稳定性考虑，CAN总线技术为重要协议。并且因为DJI提供的820R底盘电机电调和6623号云台轴电机都是对外提供CAN接口的。通过CAN总线将主控、云台和底盘进行串联，布线简单，既能向每一个ID的电机输入特定的信号，又能解析出每个特定电机的返回值(码盘值或者速度值)。除了主控-云台-底盘的CAN总线系统之外，AtomIC平台还使用了CAN2系统，用以预留其他电机的接口应用。
 
-至于I2C，在所选定陀螺仪中，陀螺仪读值是通过I2C总线传给主控的CPU进行解算的；SBUS协议主要用于遥控器接收机与主控DMA之间的通信，以达到遥控AtomIC的目的；USART主要用于串口通信，用于如GPS信号、超声波信号与上位机进行数据互换的功用。
+至于I2C，在所选定陀螺仪中，陀螺仪读值是通过RS232总线传给主控的CPU进行解算的；SBUS协议主要用于遥控器接收机与主控DMA之间的通信，以达到遥控AtomIC的目的；USART主要用于串口通信，用于如GPS信号、超声波信号与上位机进行数据互换的功用。
+
+以下为相关总线拓扑结构图：
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 0.8\textwidth]{fig/zxtp.png}
+	\caption{AtomIC总线拓扑结构图}
+	\label{zxtp}
+\end{figure}
